@@ -1785,7 +1785,7 @@ input, select, textarea {
 	}
 
 	header.major h2 {
-		color: #4acaa8;
+		color: #9D2235;
 		font-size: 3.5em;
 	}
 
@@ -2402,11 +2402,11 @@ input, select, textarea {
 			}
 
 			ul.feature-icons li:before {
-				background: #4acaa8;
+				background: #9D2235;
 				border-radius: 100%;
 				color: #ffffff;
 				display: block;
-				height: 2.5em;
+				/*height: 2.5em;*/
 				left: 0;
 				line-height: 2.5em;
 				position: absolute;
@@ -2618,7 +2618,7 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #4acaa8;
+			background-color: #9D2235;
 			color: #ffffff !important;
 		}
 
@@ -2684,6 +2684,11 @@ input, select, textarea {
 			.features article .inner > :last-child {
 				margin-bottom: 0;
 			}
+
+/*Resume*/
+.resume-list {
+	list-style-type: circle;
+}
 
 /* Header */
 
@@ -2829,12 +2834,13 @@ input, select, textarea {
 	}
 
 		#main > section > .container {
-			padding: 6em 0 4em 0;
+			padding: 5em 0 3em 0;
 		}
 
 		#main > section:first-child {
 			border-top: 0;
 		}
+		#main > section
 
 /* Footer */
 
