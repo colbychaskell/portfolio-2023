@@ -2222,7 +2222,7 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2.25em 0;
+		margin: 0 0 0em 0;
 		padding-left: 1em;
 	}
 
@@ -2406,7 +2406,7 @@ input, select, textarea {
 				border-radius: 100%;
 				color: #ffffff;
 				display: block;
-				/*height: 2.5em;*/
+				height: 2.5em;
 				left: 0;
 				line-height: 2.5em;
 				position: absolute;
