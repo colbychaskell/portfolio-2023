@@ -1,0 +1,147 @@
+/* Global Properties */
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* Global Text Styles*/
+p {
+    font-family: 'Fira Sans', sans-serif;
+}
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+}
+h2 {
+    font-family: 'Ubuntu', sans-serif; 
+}
+/* Content Styles */
+#content {
+    width: 100vw;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 5vmax;
+    overflow-x: hidden;
+}
+.center {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+section.center {
+    width: 100%;
+}
+.shadow {
+    content: "";
+    box-shadow: 0px 50px 100px 0px rgb(0 0 0 / 30%);
+}
+.blue {
+    color: #0066ff;
+ }
+ /*
+  * Add @media to center headings on smaller screens
+  */
+.heading {
+    margin-top: 6vh;
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 2vh;
+}
+.subheading {
+    color: #586371;
+    font-size: 24px;
+}
+.iphone img {
+    margin: -20px;
+    height: 90vh;
+}
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.vertical {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+section.wrap {
+    flex-wrap: wrap;
+}
+.apart {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center; 
+}
+section.equal {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+section.apart {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-links img {
+    height: 30px;
+    width: 30px;
+    margin-left: 1.5vw;
+}
+/* Replace with JS */
+.social-links img:hover {
+    opacity: 0.5;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0ms;
+    transition-duration: 0.2s;
+}
+.project-title {
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+.iphone-feature {
+    margin: 0vh -5vmax;
+}
+.app-store {
+    height: 7vh;
+    margin-top: 2vh;
+}
+#navbar {
+    margin-bottom: 2vh;
+}
+.project-image img{
+    margin: 0px 3vw;
+    width: 279px;
+    height: 279px;
+}
+.project-image img:hover {
+    opacity: 0.5;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0ms;
+    transition-duration: 0.3s;
+}
+.footer {
+    margin-top: 5vh;
+}
+.footer p {
+    font-size: 12px;
+}
+
+
