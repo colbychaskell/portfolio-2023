@@ -45,8 +45,7 @@ html, body {
 section.center {
     width: 100%;
 }
-.shadow {
-    content: "";
+shadow {
     box-shadow: 0px 50px 100px 0px rgb(0 0 0 / 30%);
 }
 .blue {
@@ -120,7 +119,7 @@ section.apart {
     margin-bottom: 3vh;
 }
 .iphone {
-    margin: 3vh 4vw;
+    margin: 5vh 4vw;
     padding: 1vh 0vw;
 }
 .app-store {
@@ -130,6 +129,13 @@ section.apart {
 #navbar {
     margin-bottom: 2vh;
 }
+.fade1 {
+    display: none;
+}
+.fade2 {
+    display: none;
+}
+
 .project-image img{
     margin: 0px 3vw;
     width: 279px;
