@@ -108,26 +108,7 @@ section.apart {
     height: 30px;
     width: 30px;
     margin-left: 1.5vw;
-}
-/* Replace with JS */
-.social-links img:hover {
-    opacity: 0.5;
-    transition-property: opacity;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0ms;
-    transition-duration: 0.2s;
-}
-.project-title {
-    margin-top: 2vh;
-    margin-bottom: 3vh;
-}
-.iphone {
-    margin: 5vh 4vw;
-    padding: 1vh 0vw;
-}
-.app-store {
-    height: 7vh;
-    margin-top: 2vh;
+    backgro
 }
 #navbar {
     margin-bottom: 2vh;
@@ -139,18 +120,46 @@ section.apart {
     display: none;
 }
 
-.project-image img{
+/* App Feature Display */
+.iphone {
+    margin: 5vh 4vw;
+    padding: 1vh 0vw;
+}
+.app-store {
+    height: 7vh;
+    margin-top: 2vh;
+}
+
+/* Project Displays */
+.project-title {
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+p.centered-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.project-display p {
+    display: none;
+
+}
+.project-display {
+    position: relative;
+}
+.project-image img {
+    width: 279px;
+    height: 279px;
+}
+.project-image {
+    background-color: gray;
     margin: 0px 3vw;
     width: 279px;
     height: 279px;
 }
-.project-image img:hover {
-    opacity: 0.5;
-    transition-property: opacity;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0ms;
-    transition-duration: 0.3s;
-}
+
+/* Footer */
 .footer {
     margin-top: 5vh;
 }
