@@ -202,6 +202,7 @@ section.apart {
     flex-direction: row;
     align-items: center;
     height: 100%;
+    cursor: pointer;
 }
 
 .view-github img {

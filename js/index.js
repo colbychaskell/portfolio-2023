@@ -9,4 +9,9 @@ $(document).ready(function() {
         $("img", this).animate({opacity: 1}, 200);   
         $("p", this).fadeOut()
     });
+
+    $(".view-github").click(function() {
+        window.location = $(this).find("a").attr("href"); 
+        return false;
+      });
 });
