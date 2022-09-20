@@ -122,6 +122,7 @@ shadow {
     height: 90vh;
 }
 .resume img {
+    width: 90vw;
     max-width: 500px;
 }
 section {
