@@ -77,6 +77,24 @@ html, body {
     flex-direction: row;
     align-items: center;
 }
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: start;
+}
+
+.feature {
+    border-bottom: 1px solid #b6bbbf;
+    padding-bottom: 4vh;
+}
+
+.projects {
+    padding-bottom: 4vh;
+    border-bottom: 1px solid #b6bbbf;
+}
+
 section.center {
     width: 100%;
 }
@@ -90,7 +108,7 @@ shadow {
     color: #0066ff;
  }
 .heading {
-    margin-top: 6vh;
+    margin-top: 5vh;
     font-size: 20px;
     width: 100%;
     margin-bottom: 4vh;
@@ -104,7 +122,7 @@ shadow {
     height: 90vh;
 }
 .resume img {
-    width: 100%;
+    max-width: 500px;
 }
 section {
     display: flex;
@@ -118,6 +136,13 @@ section {
     flex-wrap: nowrap;
     justify-content: space-around;
 }
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
 section.wrap {
     flex-wrap: wrap;
 }
@@ -164,9 +189,31 @@ section.apart {
     padding: 1vh 0vw;
 }
 .app-store {
+    margin-top: 2.5px;
     height: 7vh;
-    margin-top: 2vh;
 }
+
+.view-github {
+    margin-left: 1vw;
+    height: 7vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+.view-github img {
+    height: 5vh;
+    margin: 0.75vh 0.5vw 0.75vh 1vw;
+    color: aqua;
+}
+
+.view-github p {
+    margin: 0vh 1vw 0vh 0.5vw;
+}
+
 
 /* Project Displays */
 .project-title {
