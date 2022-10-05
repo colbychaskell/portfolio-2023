@@ -1,0 +1,19 @@
+{
+  "name": "colbychaskell.github.io",
+  "version": "2.0.0",
+  "description": "Personal Website Front End",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colbychaskell/colbychaskell.github.io.git"
+  },
+  "author": "Colby C. Haskell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colbychaskell/colbychaskell.github.io/issues"
+  },
+  "homepage": "https://github.com/colbychaskell/colbychaskell.github.io#readme"
+}
