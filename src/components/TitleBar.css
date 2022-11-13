@@ -1,0 +1,19 @@
+.title-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 43px;
+    color: var(--text-primary);
+    background-color: var(--light-blue-bg);
+}
+
+.title-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-primary);
+    line-height: 1.34;
+}

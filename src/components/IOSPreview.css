@@ -1,0 +1,30 @@
+.ios-preview-screen img {
+    border: 5px solid rgb(165, 142, 121);
+    border-radius: 20px;
+    height: 500px;
+}
+
+.ios-preview-screen img:hover {
+    /* box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);  */
+    cursor: pointer;
+    height: 600px;
+    margin: 0px -23.15px;
+}
+
+.ios-preview-screen {
+    margin: 0px 40px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+    .ios-preview-screen {
+        display: none;
+    }
+    .ios-preview-screen:nth-child(1) {
+        display: block;
+    }
+}

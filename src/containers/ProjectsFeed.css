@@ -1,0 +1,14 @@
+.projects-feed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 43px 40px 43px;
+    overflow: scroll;
+    box-sizing: border-box;
+    animation: fade-in 2s forwards;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
