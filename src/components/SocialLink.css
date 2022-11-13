@@ -2,3 +2,13 @@
     height: 30px;
     margin: 0px 0px 0px 26px;
 }
+
+@media screen and (max-width: 970px) {
+    .social-link {
+        display: none;
+    }
+
+    .social-link:nth-child(2) {
+        display: block
+    }
+}
