@@ -1,0 +1,11 @@
+:root {
+  --text-primary: #001941;
+  --text-dark: #233039;
+  --text-light: rgba(103, 120, 138);
+  --light-blue-bg: #e1edf7;
+  --light-gray-bg: rgb(241, 244, 247);
+}
+
+.App {
+  text-align: center;
+}
