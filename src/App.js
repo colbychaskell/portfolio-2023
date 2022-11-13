@@ -15,10 +15,10 @@ function App() {
       <TitledSection title="Recent Projects" subtitle="An automated feed of my top GitHub projects!" backgroundColor={"rgb(241, 244, 247)"}>
         <ProjectsFeed />
       </TitledSection>
-      <TitledSection title="Resume">
+      {/* <TitledSection title="Resume">
         <h3>Contact and Resume</h3>
         <p>Stats from GitHub (languages, etc.)</p>
-      </TitledSection>
+      </TitledSection> */}
       <Footer />
     </div>
   );

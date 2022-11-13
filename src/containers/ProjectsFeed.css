@@ -12,3 +12,9 @@
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
+
+@media screen and (max-width: 970px) {
+    .projects-feed {
+        /* padding: 10px 43px 40px 43px; */
+    }    
+}
