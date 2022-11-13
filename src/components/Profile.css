@@ -17,6 +17,10 @@
     min-width: 275px;
 }
 
+.bio p {
+    line-height: 1.54em;
+}
+
 .profile img {
     min-height: 500px;
     margin-left: min(0px, calc(60% - 750px));
