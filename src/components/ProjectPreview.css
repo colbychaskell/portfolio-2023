@@ -33,7 +33,7 @@
     color: var(--text-primary);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 966px) {
     .project-preview {
         min-width: 90%;
     }

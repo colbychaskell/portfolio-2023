@@ -22,13 +22,26 @@
     margin-left: min(0px, calc(60% - 750px));
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 970px) {
     .profile img {
-        display: none;
+        /* display: none; */
+        width: auto;
+        height: auto;
+        min-height: 0px;
+        /* max-height: 100px; */
+        margin: 0px;
+        /* height: 50%; */
     }
 
     .profile {
         height: 100%;
         border-bottom: none;
-    };
+        width: 100%;
+        flex-direction: column
+    }
+
+    .bio {
+        width: auto;
+        min-width: 0px;
+    }
 }
