@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/colbyhaskell.com/static/css/main.a69ec1ff.css",
-    "main.js": "/colbyhaskell.com/static/js/main.ace02768.js",
-    "static/js/787.d99f1011.chunk.js": "/colbyhaskell.com/static/js/787.d99f1011.chunk.js",
-    "static/media/profile.jpg": "/colbyhaskell.com/static/media/profile.3a855315fd8582425fe9.jpg",
-    "static/media/bb_log.png": "/colbyhaskell.com/static/media/bb_log.f172ae3d7e9f00ed9077.png",
-    "static/media/bb_log_entry.png": "/colbyhaskell.com/static/media/bb_log_entry.6c473f52f28c194e8c77.png",
-    "static/media/bb.png": "/colbyhaskell.com/static/media/bb.39feea0eef5a8ab27db3.png",
-    "static/media/logo.svg": "/colbyhaskell.com/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/colbyhaskell.com/index.html",
-    "main.a69ec1ff.css.map": "/colbyhaskell.com/static/css/main.a69ec1ff.css.map",
-    "main.ace02768.js.map": "/colbyhaskell.com/static/js/main.ace02768.js.map",
-    "787.d99f1011.chunk.js.map": "/colbyhaskell.com/static/js/787.d99f1011.chunk.js.map"
+    "main.css": "/static/css/main.a69ec1ff.css",
+    "main.js": "/static/js/main.7ee4b726.js",
+    "static/js/787.d99f1011.chunk.js": "/static/js/787.d99f1011.chunk.js",
+    "static/media/profile.jpg": "/static/media/profile.3a855315fd8582425fe9.jpg",
+    "static/media/bb_log.png": "/static/media/bb_log.f172ae3d7e9f00ed9077.png",
+    "static/media/bb_log_entry.png": "/static/media/bb_log_entry.6c473f52f28c194e8c77.png",
+    "static/media/bb.png": "/static/media/bb.39feea0eef5a8ab27db3.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.a69ec1ff.css.map": "/static/css/main.a69ec1ff.css.map",
+    "main.7ee4b726.js.map": "/static/js/main.7ee4b726.js.map",
+    "787.d99f1011.chunk.js.map": "/static/js/787.d99f1011.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a69ec1ff.css",
-    "static/js/main.ace02768.js"
+    "static/js/main.7ee4b726.js"
   ]
 }
