@@ -1,7 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
 import { TitleBar } from "./components/TitleBar";
-import { ProjectPreview } from './components/ProjectPreview';
 import { Profile } from "./components/Profile";
 import { ProjectsFeed } from './containers/ProjectsFeed';
 import { Footer } from "./containers/Footer";
