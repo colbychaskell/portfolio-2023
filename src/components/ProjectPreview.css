@@ -41,7 +41,8 @@
     padding: 5px 0px 15px 0px;
     display: flex;
     flex-direction: row;
-
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project-preview:hover {
