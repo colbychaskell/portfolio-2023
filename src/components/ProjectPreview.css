@@ -13,13 +13,35 @@
     overflow: hidden;
 }
 
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    text-align: start;
+}
+
 .project-info {
-    padding: 0% 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     height: 100%;
+    text-align: start;
+}
+
+.project-info p {
+    padding: 0% 10%;
+}
+
+.tag-list {
+    list-style: none;
+    margin: 0px;
+    padding: 5px 0px 15px 0px;
+    display: flex;
+    flex-direction: row;
+
 }
 
 .project-preview:hover {
