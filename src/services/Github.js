@@ -11,7 +11,8 @@ export const getProjects = async () => {
             link: project.html_url,
             stars: project.stargazers_count,
             forks: project.forks,
-            issues: project.open_issues
+            issues: project.open_issues,
+            topics: project.topics
         };
     });
 

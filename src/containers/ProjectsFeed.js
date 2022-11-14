@@ -17,7 +17,14 @@ export const ProjectsFeed = (props) => {
         <div className="projects-feed">
             { projects.map((project, index) => {
                 const description = project.description == null ? "A very exciting project!" : project.description;
-                return  <ProjectPreview key={index} name={project.name} description={description} link={project.link} stars={project.stars} forks={project.forks} issues={project.issues}/>;
+                return  <ProjectPreview key={index} 
+                                        name={project.name} 
+                                        description={description} 
+                                        link={project.link} 
+                                        stars={project.stars} 
+                                        forks={project.forks} 
+                                        issues={project.issues}
+                                        tags={project.topics} />;
             }) }
         </div>
     );
