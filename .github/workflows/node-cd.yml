@@ -3,7 +3,11 @@ on:
     branches: [ main ]
 
 jobs:
-  - name: Deploy 🚀
-    uses: JamesIves/github-pages-deploy-action@v4
-    with:
-      folder: build # The folder the action should deploy.
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build # The folder the action should deploy.
