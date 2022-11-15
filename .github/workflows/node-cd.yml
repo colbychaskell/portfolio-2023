@@ -1,9 +1,17 @@
+name: CD Deploy
+
 on:
-  push:
-    branches: [ main ]
+  workflow_run:
+    workflows: ["CI"]
+    types:
+      - completed
 
 jobs:
-  - name: Deploy 🚀
-    uses: JamesIves/github-pages-deploy-action@v4
-    with:
-      folder: build # The folder the action should deploy.
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build # The folder the action should deploy.
