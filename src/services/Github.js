@@ -16,12 +16,12 @@ export const getProjects = async () => {
         };
     });
 
-    const filteredRepos =  repos.filter((repo) => {
+    const filteredRepos = repos.filter((repo) => {
         return ProjectsToFeature.includes(repo.name);
     });
 
     // This will sort the repos by stars + forks + issues, descending
     return filteredRepos.sort((a, b) => {
-        return (b.stars + b.forks + b.issues) < (a.stars + a.forks + a.issues);
+        return (b.stars + b.forks + b.issues) - (a.stars + a.forks + a.issues);
     });
 }
