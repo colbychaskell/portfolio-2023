@@ -1,11 +1,10 @@
-import React from "react";
-import './TitleBar.css';
+import './NavBar.css';
 import { SocialLink } from "./SocialLink";
 import GitHubIcon from './img/github.png';
 import LinkedInIcon from './img/linkedin.png';
 import EmailIcon from './img/email.png';
 
-const SocialLinks = [  
+const SocialLinks = [
     {
         link: "https://www.github.com/colbychaskell",
         icon: GitHubIcon,
@@ -23,15 +22,15 @@ const SocialLinks = [
     }
 ];
 
-export const TitleBar = (props) => {
+export const NavBar = (props) => {
     return (
-        <div className="title-bar">
-            <h1 className="title-text">{props.name}</h1>   
-            <div className="social-links">
+        <nav className="title-bar">
+            <h1 className="font-medium text-lg">{props.name}</h1>
+            <div className="social-links flex flex-row">
                 {SocialLinks.map((link, index) => {
-                    return <SocialLink key={index} link={link.link} icon={link.icon} alt={link.alt} />  ;
+                    return <SocialLink key={index} link={link.link} icon={link.icon} alt={link.alt} />;
                 })}
             </div>
-        </div>
+        </nav>
     );
 }
