@@ -1,18 +1,23 @@
 import { ProjectPreview } from '../components/ProjectPreview';
 import { useState, useEffect } from 'react';
 import { getProjects } from '../services/Github';
+import type { ProjectInfo } from '../services/Github';
 
-export const ProjectsFeed = (props) => {
+type ProjectsFeedProps = {
+    isExpanded: boolean
+};
+
+export const ProjectsFeed = (props: ProjectsFeedProps) => {
     // Useeffect call to get projects from github
-    const [projects, setProjects] = useState([{ name: "Loading...", description: "Loading...", link: "#" }]);
+    const [projects, setProjects] = useState<ProjectInfo[]>([]);
 
     useEffect(() => {
-        getProjects().then((data) => {
+        getProjects().then((data: ProjectInfo[]) => {
             setProjects(data);
         })
     }, []);
 
-    const projectsLoaded = projects.map((project, index) => {
+    const projectsLoaded = projects.map((project: ProjectInfo, index: number) => {
         return <ProjectPreview key={index}
             name={project.name}
             description={project.description || "A very exciting project!"}

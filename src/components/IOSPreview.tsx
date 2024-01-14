@@ -1,9 +1,12 @@
-import React from 'react';
 import './IOSPreview.css';
 import Tilt from 'react-parallax-tilt';
 
+interface IOSPreviewProps {
+    image: string,
+    alt: string
+};
 
-export const IOSPreview = (props) => {
+export const IOSPreview = (props: IOSPreviewProps) => {
     return (
         <div className="ios-preview-screen">
             <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10}>
