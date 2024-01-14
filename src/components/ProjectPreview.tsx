@@ -1,37 +1,37 @@
-import React from 'react';
-import './ProjectPreview.css';
 import { ProjectStats } from './ProjectStats';
 import { TopicTag } from './TopicTag';
 
-export const ProjectPreview = (props) => {
-    const { name = "Untitled Project",
-            description = "A very exciting project!", 
-            link="https://www.github.com/colbychaskell", 
-            stars=0, 
-            forks=0, 
-            issues=0,
-            tags = []
-        } = props;
+export const ProjectPreview = ({
+    name = "Untitled Project",
+    description = "A very exciting project!",
+    link = "https://www.github.com/colbychaskell",
+    stars = 0,
+    forks = 0,
+    issues = 0,
+    tags = []
+}) => {
+    const projectTitle = name.replaceAll(new RegExp("[-_]", "g"), " ");
 
     const handleClick = () => {
         window.open(link, "_blank", "noopener,noreferrer");
     }
 
     return (
-        <div className="project-preview" onClick={handleClick}>
-            <div className="card-content">
-                <div className="project-info">                
-                    <h1>{name}</h1>
-                    <a href={link} target="_blank" rel="noreferrer"><p>{description}</p></a>
+        <div className="cursor-pointer flex flex-col justify-between w-4/5 xl:w-4/6 h-64 bg-white mx-4 my-5 rounded-xl overflow-hidden hover:shadow-xl" onClick={handleClick}>
+            <div className="flex flex-col justify-between px-5 py-3 h-full overflow-hidden">
+                <div className="">
+                    <h1 className="text-xl font-semibold m-1">{projectTitle}</h1>
+                    <p className="text-clip">
+                        {description}
+                    </p>
                 </div>
 
-                <ul className="tag-list">
-                    {tags.map((tag, index) => {
+                <ul className="my-1 mx-5 flex flex-row justify-center flex-wrap">
+                    {tags.map((tag: string, index: number) => {
                         return <li key={index}><TopicTag tag={tag} /></li>
                     })}
                 </ul>
             </div>
-            {/* TODO: Add topic tags here */}
             <ProjectStats stars={stars} forks={forks} issues={issues} />
         </div>
     );

@@ -1,21 +1,27 @@
-import React from 'react';
-import './ProjectStats.css';
-
 export const ProjectStats = (props) => {
+    const statsList = [
+        {
+            "name": "Stars",
+            "value": props.stars,
+        },
+        {
+            "name": "Forks",
+            "value": props.forks,
+        },
+        {
+            "name": "Issues",
+            "value": props.issues,
+        }
+    ];
+
     return (
-        <div className="project-stats">
-            <div className="stat">
-                <h2>{props.stars}</h2>
-                <p>Stars</p>
-            </div>
-            <div className="stat">
-                <h2>{props.forks}</h2>
-                <p>Forks</p>
-            </div>
-            <div className="stat">
-                <h2>{props.issues}</h2>
-                <p>Issues</p>
-            </div>
+        <div className="flex flex-row justify-evenly bg-sky-100 py-1">
+            {statsList.map((stat) => {
+                return (<div key={stat.name} className="flex flex-row justify-around align-center">
+                    <h2>{stat.value}</h2>
+                    <p className="mx-1">{stat.name}</p>
+                </div>);
+            })}
         </div>
     );
 }

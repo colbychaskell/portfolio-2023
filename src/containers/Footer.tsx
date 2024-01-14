@@ -1,9 +1,6 @@
-import React from 'react';
-import './Footer.css';
-
 export const Footer = (props) => {
     return (
-        <div className="footer">
+        <div className="p-8 flex justify-start">
             <p>Colby Haskell © 2022</p>
         </div>
     );
