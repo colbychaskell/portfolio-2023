@@ -3,7 +3,7 @@ import { ProjectsFeed } from './ProjectsFeed';
 import { ChevronDoubleDownIcon } from '@heroicons/react/24/outline';
 import { ChevronDoubleUpIcon } from '@heroicons/react/24/outline';
 
-export const TitledSection = (props) => {
+export const TitledSection = (props: {title: string, subtitle: string}) => {
     const [isExpanded, setExpanded] = useState(false);
 
     const seeMoreButton = (

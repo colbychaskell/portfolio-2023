@@ -13,7 +13,7 @@ assets/.DS_Store
 /coverage
 
 # production
-/build
+dist
 
 # misc
 .DS_Store

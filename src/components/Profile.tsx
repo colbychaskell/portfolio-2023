@@ -1,8 +1,7 @@
-import React from "react";
 import ProfileImage from "./img/profile.jpg";
 import "./Profile.css";
 
-export const Profile = (props) => {
+export const Profile = () => {
     return (
         <div className="profile">
             <img src={ProfileImage} alt="Profile" />

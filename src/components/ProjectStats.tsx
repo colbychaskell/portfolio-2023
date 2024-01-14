@@ -1,4 +1,10 @@
-export const ProjectStats = (props) => {
+interface ProjectStatsProps {
+    stars: number,
+    forks: number,
+    issues: number
+};
+
+export const ProjectStats = (props: ProjectStatsProps) => {
     const statsList = [
         {
             "name": "Stars",

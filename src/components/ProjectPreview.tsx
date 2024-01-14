@@ -1,6 +1,17 @@
 import { ProjectStats } from './ProjectStats';
 import { TopicTag } from './TopicTag';
 
+type ProjectPreviewProps = {
+    name: string,
+    description: string,
+    link: string,
+    stars: number,
+    forks: number,
+    issues: number,
+    tags: string[]
+};
+
+
 export const ProjectPreview = ({
     name = "Untitled Project",
     description = "A very exciting project!",
@@ -9,7 +20,7 @@ export const ProjectPreview = ({
     forks = 0,
     issues = 0,
     tags = []
-}) => {
+}: ProjectPreviewProps) => {
     const projectTitle = name.replaceAll(new RegExp("[-_]", "g"), " ");
 
     const handleClick = () => {
