@@ -10,7 +10,7 @@ export const IOSPreview = (props: IOSPreviewProps) => {
     return (
         <div className="ios-preview-screen">
             <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10}>
-                <a href="https://apps.apple.com/us/app/betterbrews/id1585521602" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/BetterBrews/BetterBrews-IOS" target="_blank" rel="noopener noreferrer">
                     <img src={props.image} alt={props.alt} />
                 </a>
             </Tilt>
