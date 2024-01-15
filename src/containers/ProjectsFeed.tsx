@@ -20,7 +20,7 @@ export const ProjectsFeed = (props: ProjectsFeedProps) => {
         fetchProjects().catch(console.error);
 
         return () => { };
-    }, [projects]);
+    }, []);
 
     const createPreviews = (projects: ProjectInfo[]): JSX.Element[] => {
         return projects.map((project: ProjectInfo, index: number) => {
