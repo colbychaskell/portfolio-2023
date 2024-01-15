@@ -6,9 +6,10 @@ export const Profile = () => {
         <div className="profile">
             <img src={ProfileImage} alt="Profile" />
             <div className="bio">
-                <h2 className="text-lg font-bold my-5">Full Stack Software Engineer</h2>
-                <p className="my-4">I am a software engineer and a senior studying CE/CS at USC. I have experience with full stack web development, embedded systems, and software for IoT devices. My favorite technologies at the moment are ReactJS and SwiftUI.  </p>
-                <p className="my-4">Feel free to reach out by email or connect with me on Linkedin!</p>
+                <h2 className="text-lg font-bold my-5">Full-Stack Software Engineer</h2>
+                <p className="my-4 max-w-prose">I am a software engineer currently working on real-time simulation software for aerospace systems using C and C++.</p>
+                   <p>I enjoy developing web applications with TypeScript, React, and NextJS.
+                   I also have professional experience with Python, LLVM, DevOps tools, and SQL databases.</p>
             </div>
         </div>
     );
