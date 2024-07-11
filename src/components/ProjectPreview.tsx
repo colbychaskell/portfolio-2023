@@ -28,11 +28,11 @@ export const ProjectPreview = ({
     }
 
     return (
-        <div className="cursor-pointer flex flex-col justify-between w-4/5 h-64 bg-white mx-4 my-5 rounded-xl overflow-hidden hover:shadow-xl" onClick={handleClick}>
+        <div className="cursor-pointer flex flex-col justify-between w-4/5 h-64 bg-bg_day mx-4 my-5 rounded-xl overflow-hidden hover:shadow-xl" onClick={handleClick}>
             <div className="flex flex-col justify-between px-10 py-3 h-full overflow-hidden">
                 <div className="">
-                    <h1 className="text-xl font-semibold m-1">{projectTitle}</h1>
-                    <p className="text-sm text-start text-pretty">
+                    <h1 className="text-xl text-fg_day font-semibold m-1">{projectTitle}</h1>
+                    <p className="text-sm text-start text-bg text-pretty">
                         {description}
                     </p>
                 </div>

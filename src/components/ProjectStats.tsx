@@ -16,7 +16,7 @@ export const ProjectStats = (props: ProjectStatsProps) => {
         },
         {
             "name": "forks",
-            "icon": <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 256 256" id="git-fork">
+            "icon": <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 256 256">
                 <rect width="256" height="256" fill="none"></rect>
                 <circle cx="128" cy="188" r="28" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></circle>
                 <circle cx="188" cy="67.998" r="28" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></circle>
@@ -35,14 +35,15 @@ export const ProjectStats = (props: ProjectStatsProps) => {
 
 
     return (
-        <div className="flex flex-row items-center justify-evenly bg-sky-100 py-1">
+        <div className="flex flex-row items-center justify-evenly border-t-2 border-t-bg
+            py-1">
             {statsList.map((stat) => {
                 return (
                     <div key={stat.name} className="flex flex-row justify-around align-center">
-                        <div className="flex flex-col justify-center mx-1">
+                        <div className="text-bg flex flex-col justify-center mx-1">
                             {stat.icon}
                         </div>
-                        <h2>{(stat.value).toLocaleString(undefined)}</h2>
+                        <h2 className="text-bg">{(stat.value).toLocaleString(undefined)}</h2>
                     </div>);
             })}
         </div>

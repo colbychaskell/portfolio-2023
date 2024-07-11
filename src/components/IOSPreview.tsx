@@ -8,12 +8,10 @@ interface IOSPreviewProps {
 
 export const IOSPreview = (props: IOSPreviewProps) => {
     return (
-        <div className="ios-preview-screen">
-            <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10}>
-                <a href="https://github.com/BetterBrews/BetterBrews-IOS" target="_blank" rel="noopener noreferrer">
-                    <img src={props.image} alt={props.alt} />
-                </a>
-            </Tilt>
+        <div className="ios-preview-screen ">
+            <a href="https://github.com/BetterBrews/BetterBrews-IOS" target="_blank" rel="noopener noreferrer">
+                <img className="border-bg" src={props.image} alt={props.alt} />
+            </a>
         </div>
     );
 }

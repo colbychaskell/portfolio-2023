@@ -7,11 +7,11 @@ import { TitledSection } from './containers/TitledSection';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-bg_day">
       <NavBar name="Colby Haskell" />
       <Profile />
-      <ProjectFeatureSection /> 
-      <TitledSection title="Recent Projects" subtitle="An automated feed of my top GitHub projects!" />
+      <ProjectFeatureSection />
+      <TitledSection title={<h1 className="text-xl font-bold text-orange">Recent Projects</h1>} subtitle="An automated feed of my top GitHub projects!" />
       <Footer />
     </div>
   );

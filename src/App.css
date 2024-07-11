@@ -3,11 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --text-primary: #001941;
+  --text-primary: #c0caf5;
+  --text-fg: #c0caf5;
   --text-dark: #233039;
   --text-light: rgba(103, 120, 138);
   --light-blue-bg: #e1edf7;
   --light-gray-bg: rgb(241, 244, 247);
+  --dark-gray: #1a1b26;
 }
 
 .App {
