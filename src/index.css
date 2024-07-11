@@ -1,11 +1,11 @@
+html {
+  background-color: "#e1e2e7";
+}
+
 body {
   margin: 0;
-  font-family: 'montserrat', sans-serif;
+  font-family: 'JetBrains Mono', sans-serif;
+  background-color: "#e1e2e7";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */

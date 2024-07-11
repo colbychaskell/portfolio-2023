@@ -4,14 +4,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     padding: 43px;
     color: var(--text-primary);
-    background-color: var(--light-blue-bg);
+    background-color: var(--dark-gray);
 }
 
 .title-text {
-    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 500;
     color: var(--text-primary);
