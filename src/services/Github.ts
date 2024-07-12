@@ -33,6 +33,14 @@ export const getProjects = async (): Promise<Project[]> => {
   const response = await fetch(
     "https://api.github.com/users/colbychaskell/repos",
   );
+
+  if (!response.ok) {
+    throw new Error(
+      "Failed to fetch projects from Github. Error " +
+        response.status.toString(),
+    );
+  }
+
   const data = await response.json();
 
   const repos: Project[] = await Promise.all(
